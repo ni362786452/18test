@@ -21,6 +21,7 @@
     });
 //实例化日期
 
+
     new Date(1542335121000).toLocaleString();
     console.log(new Date(1542335121000).toLocaleString())
     //2018/11/16 上午10:25:21
