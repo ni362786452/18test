@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/login.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="format-datection" content="telephone=on">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="stylesheet" href="font_895357_xzymfnwngx/iconfont.css">
+	<script>
+		var html = document.documentElement;
+		var wHtml = html.getBoundingClientRect().width;
+		// console.log(wHtml)
+		html.style.fontSize = wHtml/7.5+'px'
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="box">
+		<!-- 顶部 -->
+		<div class="qn_top">
+			<span>
+				<i class="iconfont icon-icon4"></i>
+			</span>
+			<p>
+				登录
+			</p>
+			<s>
+				注册
+			</s>
+		</div>
+		<!-- 选择登录方式 -->
+		<div class="qn_fs">
+			<div class="fs_border">
+				<span class="fs fs1">短信验证码登录</span>
+				<span class="fs">账号登录</span>
+			</div>
+		</div>
+		<!-- 短信登录 -->
+		<div class="qn_phone">
+			<form action="post">
+				<div class="phone">
+					<span>手机号</span>
+					<input type="tel" name="" required="required" pattern="^1[3456789]\d{9}$" placeholder="请输入手机号" autocomplete='on'>
+				</div>
+				<div class="yanzheng">
+					<span>验证码</span>
+					<input type="text" name="" required="required" placeholder="请输入验证码" autocomplete='off' class="input hui">
+					<button id="btn">获取验证码</button>
+				</div>
+			</form>
+			<div class="qn_dl">
+				<a href="" class="dl">登录</a>
+			</div>
+			<div class="text1"></div>
+		</div>
+		<!-- 账号密码登录 -->
+		<div class="qn_phone1">
+			<form action="post">
+				<div class="phone">
+					<span>账号</span>
+					<input type="text" name="" required="required" placeholder="手机号/邮箱/用户名" autocomplete='on'>
+				</div>
+				<div class="yanzheng">
+					<span>密码</span>
+					<input type="password" name="" required="required" placeholder="请输入密码" autocomplete='off'>
+				</div>
+			</form>
+			<div class="qn_dl">
+				<a href="" class="dl">登录</a>
+				<a href="" class="wj">找回密码</a>
+			</div>
+		</div>
+		<div class="qn_foot">
+			<div class="qn_bb">
+				<a href="">电脑版</a>
+				<a href="">关于我们</a>
+				<a href="">意见反馈</a>
+			</div>
+			<div class="qn_bq">
+				Qunar 京ICP备05021087
+			</div>
+		</div>
+	</div>
+	<script>
+		var box = document.getElementsByClassName("box")[0];
+		var pH = document.documentElement.clientHeight;
+		console.log(pH)
+		box.style.height = pH + 'px';
+		$(".fs").click(function() {
+		    $('.fs').removeClass('fs1');
+		    $(this).addClass('fs1')
+		});
+		var yzm = '';
+		var text = document.getElementsByClassName('text1')[0]
+		var controlsInput = document.getElementsByClassName('input')[0];
+		controlsInput.onblur = function(){
+			var controlsText = controlsInput.value;
+			if((controlsText == yzm.toLowerCase()) ||
+        (controlsText == yzm.toUpperCase()) ||
+        (controlsText == yzm)){
+				text.innerHTML = '';
+			}else{
+				text.innerHTML = '请输入正确的验证码'
+			}
+		}
+		function gain() {
+		    yzm = '';
+		    var arr = [2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "m", "n", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+		    for (var i = 0; i < 4; i++) {
+		        index = Math.floor(Math.random() * arr.length);
+		        yzm += arr[index];
+		    }
+		}
+		$('#btn').click(function(event) {
+		    gain()
+		    $('#btn').html(yzm)
+		});
+		$('.fs:eq(0)').click(function() {
+		    $('.qn_phone').show();
+		    $('.qn_phone1').hide();
+		})
+		$('.fs:eq(1)').click(function() {
+		    $('.qn_phone').hide();
+		    $('.qn_phone1').show();
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+项目说明：
+
+1、根据http://touch.qunar.com/ 完成页面页面
+
+2、根据
+    http://touch.piao.qunar.com/或
+    https://piao.qunar.com/touch/channel/onedaytour
+    完成页面开发
+
+3、根据https://user.qunar.com/mobile/login.jsp  完成页面开发
+
+4、素材图片请使用谷歌浏览器的图片插件下载使用
+    

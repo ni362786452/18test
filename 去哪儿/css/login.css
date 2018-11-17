@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+html{ 
+    font-size:100%;
+    height: 100%; 
+}
+body{
+    background: #F5F5F5;
+    /*默认的手机端字体：Helvetica，加微软雅黑是为了在PC上也能模拟类似于手机上的字体效果*/
+    font-family: Helvetica,"微软雅黑",-apple-system,sans-serif;
+    /*禁止文字自动被浏览器缩放 */
+    text-size-adjust: 100%!important;
+    overflow-x: hidden;
+}
+a, abbr, address, article, aside, audio, b, blockquote, body, caption, cite, code, dd, del, dfn, dialog, div, dl, dt, em, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, sup, tfoot, th, thead, time, tr, ul, var, video,s{
+    font-family: Helvetica,"微软雅黑",-apple-system,sans-serif;
+    text-decoration: none;
+    font-size: 0.28rem;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    /*清除点击阴影*/
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    /*让字体更顺滑,无锯齿*/
+    -webkit-font-smoothing: antialiased;
+}
+ol,ul,li{list-style:none;}
+b,i,u{font-style:normal;font-weight:normal;text-decoration:none;}
+table{border-collapse:collapse;}
+fieldset,img{border:none;outline:none;}
+input,button,select,textarea{font-family:Helvetica; border:none;outline:none; 
+    /*消除按钮默认的圆角外观*/
+    -webkit-apprearance:none;
+    -webkit-tap-highlight-color:transparent;}
+a{text-decoration:none; outline:none;}
+
+/*公共样式*/
+
+/*清除浮动*/
+.clearfix:after{content:"\0020"; height:0; display:block; clear:both; overflow:hidden}
+/*文本省略号*/
+.cutFont {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+/*位置与浮动*/
+.fl   {float:left;}
+.fr   {float:right;}
+.posir{position:relative;}
+.bl{
+    display: block;
+}
+.bi{
+    display: inline-block;
+}
+.bn{
+    border: none;
+}
+/*文字 文字对齐方式*/
+.tc{text-align:center}
+.tl{text-align:left} 
+.tr{text-align:right}
+.fb{font-weight:bold}
+.txj  {text-align:justify;}
+.cutFont{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden
+}
+/*颜色，背景色等，根据网站的主色、辅色来设置、调整*/
+.blue   { color:#06c}
+.brown  { color:#666}
+.gray   { color:#999}
+.green  { color:#2d9b01}
+.orange { color:#f60}
+.red    { color:#f23838}
+.white  { color:#fff}
+.bgRed { background-color: #ef3239; }
+.bgGray { background-color: #f8f8f8; }
+
+
+/*开始*/
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    background: #f3f9fc;
+    position: relative;
+}
+.qn_top{
+    height: 0.88rem;
+    width: 100%;
+    background: #18a9b9;
+    display: flex;
+    justify-content: space-between;
+}
+.qn_top span {
+    padding-left: 0.2rem;
+    height: 100%;
+}
+.icon-icon4{
+    font-size: 0.4rem;
+    font-weight: bold;
+    line-height: 0.88rem;
+    color: #75ffff;
+    cursor: pointer;
+}
+.qn_top p{
+    line-height: 0.88rem;
+    color: #fff;
+    font-size: 0.36rem;
+}
+.qn_top s{
+    padding-right: 0.2rem;
+    height: 100%;
+    cursor: pointer;
+    color: #75ffff;
+    font-size: 0.32rem;
+    line-height: 0.88rem;
+}
+/*选择登录方式*/
+.qn_fs{
+    background: #18a9b9;
+    color: #fff;
+    box-sizing: border-box;
+    height: .9rem;
+    padding: .1rem .2rem 0;
+}
+.fs_border{
+    border:1px solid #fff;
+    border-radius: 0.06rem;
+    height: 0.64rem;
+    font-size: 0;
+}
+.fs{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 0.64rem;
+    color: #fff;
+    font-size: 0.32rem;
+    background: #18a9b9;
+}
+.fs1{
+    color: #18a9b9;
+    background: #fff;
+}
+/*登录方式的切换*/
+.qn_phone,.qn_phone1{
+    border-top: 1px solid #ccc;
+    margin-top: 0.2rem;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.32rem;
+}
+.qn_phone{
+    display: block;
+}
+.qn_phone1{
+    display: none;
+}
+.qn_phone form,.qn_phone1 form{
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    padding-left: 0.2rem;
+}
+.phone,.yanzheng{
+    height: 0.9rem;
+    border-bottom: 1px solid #ddd;
+    line-height: 0.9rem;
+}
+.yanzheng{
+    border: none;
+}
+.phone span,.yanzheng span{
+    display: inline-block;
+    color: #19a9ba;
+    font-size: 0.32rem;
+    width: 1.8rem;
+    position: relative;
+}
+.phone input{
+    display: inline-block;
+    width: 5rem;
+    margin-top: 0.16rem;
+    height: 0.6rem;
+    border: 0;
+    line-height: 1.5;
+    color: #000;
+}
+.yanzheng input{
+    display: inline-block;
+    margin-top: 0.16rem;
+    height: 0.6rem;
+    border: 0;
+    line-height: 1.5;
+    color: #000;
+}
+.yanzheng button{
+    margin: .14rem .2rem;
+    width: 1.9rem;
+    height: 0.6rem;
+    background: #fff;
+    color: #00afc7;
+    border: 1px solid #ccc;
+    border-radius: .06rem;
+}
+.qn_dl{
+    margin-top:0.30rem;
+    padding: 0 0.2rem;
+}
+.qn_dl>.dl{
+    background: #85d1db;
+    color: #fff;
+    text-align: center;
+    line-height: 1rem;
+    display: block;
+    border-radius: .06rem;
+    font-size: 0.36rem;
+}
+.qn_dl>.wj{
+    display: block;
+    width: 100%;
+    margin-top: 0.2rem;
+    text-align: right;
+    color: #00afc7;
+    font-size: 0.26rem;
+}
+.qn_foot{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.qn_bb{
+    display: flex;
+    width: 100%;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #ccc;
+    color: #4ebac8;
+    text-align: center;
+    justify-content: space-around;
+}
+.qn_bb a{
+    display:block;
+    font-size: 0.26rem;
+    color: #25a4bb;
+}
+.qn_bq{
+    color: #d4d9de;
+    text-align: center;
+    font-size: 0.24rem;
+    padding: 0.2rem 0.2rem 0.4rem;
+}
+.text1{
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}

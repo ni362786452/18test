@@ -1,0 +1,40 @@
+/*@font-face{
+    font-family:"myfont";
+    /*只兼容IE和谷歌火狐等现代浏览器*/
+/*     src:url("touch_home.eot") format('eot'),
+    url("touch_home.woff") format('woff'),
+    url("home.3bd9a29b.ttf") format('ttf');
+} */
+
+/* 使用
+.iconfont{
+    规定自定义字体名称
+    font-family: "myfont";
+    默认图标字体大小是16
+    font-size:16px;
+    font-style:normal;
+    让字体边缘没有锯齿，更加清晰
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+@charset "utf-8";
+@font-face {
+    font-family: 'mpiconfont';
+    src: url(touch_home.eot);
+    src: url(touch_home.eot) format('embedded-opentype'),url('home.3bd9a29b.ttf') format('truetype'),url('touch_home.woff') format('woff');
+    font-weight: normal;
+    font-style: normal
+}
+
+.mp-iconfont {
+    font-family: 'mpiconfont';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
