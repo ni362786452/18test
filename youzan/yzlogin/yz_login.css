@@ -1,0 +1,227 @@
+@charset 'utf-8'
+* {
+	margin: 0;
+	padding: 0;
+    font-weight: normal;
+    color: #282828;
+    font-size: 18px;
+    font-family: "AkkuratPro-Regular", Helvetica, Arial, sans-serif;
+}
+body, dd, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, td, textarea, th, tr, ul{
+	margin: 0;
+	padding:0;
+    font: inherit;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+i,em,s,u,{
+	font-style: normal;
+	text-decoration:none;
+}
+a{
+	text-decoration:none;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.bl {
+	display: block;
+}
+.in {
+	display: inline-block;
+}
+.box {
+	display: flex;
+	flex-direction:column;
+}
+.login_box {
+	width: 800px;
+	margin: 0 auto;
+}
+/*注册顶部*/
+.login_head {
+    margin: 50px 0 40px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 21px;
+    height: 24px;
+}
+.login_head img{
+	vertical-align: middle;
+}
+.login_head span {
+	font-size: 16px;
+    color: #333;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 1px solid #e8e8e8;
+}
+/*注册内容*/
+.login_body{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 600px;
+	height: 500px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.form_box{
+	width: 350px;
+	margin: 0 auto;
+}
+/*手机,密码,验证码*/
+.iphone_box ,.pass_box ,.controls_box{
+	width: 100%;
+	padding-top: 20px;
+    height: 35px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.red {
+    border-bottom: 2px solid #FF4444;
+}
+.blue {
+	border-bottom: 2px solid #38f;
+}
+.err-msg{
+	visibility: hidden;
+	font-size: 12px;
+    color: #FF4444;
+    margin-left: 100px;
+    padding-top: 5px;
+    height: 20px;
+}
+.iphone span,.password span,.controls span{
+	display: inline-block;
+	width: 100px;
+    text-align: left;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.state {
+	width: 80px;
+	border: none;
+	color: #333;
+}
+.iphone_input{
+	width: 150px;
+}
+/*手机,密码,验证的输入框*/
+.iphone_input ,.pass_input ,.controls_input{
+	outline: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 5px 0;
+    color: #333;
+}
+.controls_input{
+	width: 103px;
+}
+/*获取验证码*/
+#btn{
+	width: 90px;
+	height: 37px;
+	margin-left: 10px;
+    cursor: pointer;
+    float: right;
+    border: 1px solid #38f;
+    background: #fff;
+    color: #38f;
+}
+/*自动三天内登录关联*/
+.auto{
+	margin-top: 15px;
+	height: 20px;
+}
+.auto_input{
+	font-size: 12px;
+    font-weight: normal;
+    color: #666;
+}
+.checkbox{
+    vertical-align: middle;
+	margin-right: 5px;
+}
+.auto a{
+	float: right;
+	font-size: 12px;
+    font-weight: normal;
+    color: #666;
+}
+/*登录按钮*/
+.login_btn{
+	display: inline-block;
+	width: 100%;
+	border: none;
+	color: #fff;
+	height: 45px;
+    background-color: #3388FF;
+    border-color: #2277FF;
+    border-radius: 2px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.register-link{
+	margin-top: 15px;
+	float: right;
+    font-size: 14px;
+    color: #3388FF;
+}
+/*右边APP盒子*/
+.side-wrap{
+	width: 200px;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 20px 0;
+    height: 240px;
+    box-sizing: border-box;
+}
+.side-wrap h4 {
+	margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #666;
+}
+.side-wrap p {
+	margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+}
+.side-wrap button{
+	font-size: 12px;
+    background: #fff;
+    padding: 4px 12px;
+    border: 1px solid #ddd;
+    width: 140px;
+    margin: auto;
+}
+/*底部商标跳转*/
+.login_foots{
+	margin-top: 20px;
+    text-align: center;
+    color: #999;
+}
+.login_foots a{
+	color: #999;
+}
