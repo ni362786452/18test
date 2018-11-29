@@ -52,7 +52,7 @@ a{
 	display: flex;
 	flex-direction:column;
 }
-/*有赞精选-发现朋友圈的好货*/
+/*美赞精选-发现朋友圈的好货*/
 .banner_top {
 	position: relative;
     width: 100%;
@@ -364,7 +364,7 @@ a{
 		bottom: 0px;
 	}
 }
-/*关于有赞精选*/
+/*关于美赞精选*/
 .yz_about {
 	background: #fff;
 	width: 100vw;

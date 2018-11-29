@@ -202,7 +202,7 @@ a{
 .op {
 	opacity: 1;
 }
-/*有赞微商城*/
+/*美赞微商城*/
 .media-show ,{
 	width: 100vw;
 	background: #fff;
@@ -261,7 +261,7 @@ a{
 	background: #38f;
     color: #fff;
 }
-/*有赞零售视频*/
+/*美赞零售视频*/
 .yz_show>img {
 	background-size: cover;
 }
@@ -412,7 +412,7 @@ a{
     background-size: cover;
     background: url(../assets/right_arrow.png);
 }
-/*他们都在用有赞*/
+/*他们都在用美赞*/
 .use_yz {
 	width: 100%;
     background: #f8f8f8;
@@ -511,7 +511,7 @@ a{
     padding: 11px 21px;
     color: #38f;
 }
-/*有赞担保*/
+/*美赞担保*/
 .guarantee {
 	width: 100vw;
 	background-image: url(../assets/bbae9a642b5f288a2e331d72fe7069ae.jpg);

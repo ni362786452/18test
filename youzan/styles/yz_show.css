@@ -80,7 +80,7 @@ a{
 	height: 46px;
 	border-bottom: 2px solid #e00;
 }
-/*有赞微商城*/
+/*美赞微商城*/
 .yz_show{
 	width: 100vw;
 	background: url(../assets/show.jpg);
@@ -159,7 +159,7 @@ a{
 .mani_inner>img {
 	height: 330px;
 }
-/*系统数据分析,有赞开放平台,有赞广告投放*/
+/*系统数据分析,美赞开放平台,美赞广告投放*/
 .function {
 	width: 100vw;
 	padding: 90px 0;
@@ -435,7 +435,7 @@ a{
 .fw_img4{
 	background: url(../assets/2db2eec8863f5aedc31ad4a08a792e86.png) -503px 0 no-repeat;
 }
-/*他们都在用有赞微商城*/
+/*他们都在用美赞微商城*/
 .logo_title{
 	padding: 90px 0 15px;
 	line-height: 40px;
